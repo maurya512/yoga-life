@@ -2,12 +2,15 @@
 
 export const menuData = [
     {
+        // ! what the business is all about
         title: 'About', link: '/about'
     },
     {
+        // ! how much do we charge per session and what services do we offer
         title: 'Sessions', link: '/sessions'
     },
     {
-        title: 'Gallery', link: '/gallery'
+        // ! see what people have to say after using our services
+        title: 'Results', link: '/results'
     }
 ]
