@@ -3,6 +3,8 @@ import React from 'react'
 import styled, { css } from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import { menuData } from '../../data/MenuData'
+import { Button } from '../Button/Button'
+import { AiOutlineBars } from 'react-icons/ai'
 
 // ! styled components
 const Nav = styled.nav`
@@ -16,13 +18,6 @@ position: fixed;
 width: 100%;
 `
 
-// ! logo styling
-// ! link makes the styled component react as a link
-const Logo = styled(Link)`
-color: #fff;
-font-styling: italic;
-`
-
 // ! styling for nav links
 const NavLink = css`
 color: #fff;
@@ -34,25 +29,64 @@ cursor: pointer;
 text-decoration: none;
 `
 
+// ! logo styling
+// ! link makes the styled component react as a link
+const Logo = styled(Link)`
+${NavLink}
+font-styling: italic;
+`
+
+
 // ! menu bars styling
-const MenuBars = styled.i`
+const MenuBars = styled(AiOutlineBars)`
+display: none;
+
+@media screen and (max-width: 768px) {
+    color: #fff;
+    display: block;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 15%);
+}
 `
 
 // ! nav menu styling
 const NavMenu = styled.i`
 display: flex;
 align-items: center;
+margin-right: -48px;
+
+// ! media queries
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `
 // ! styling nav menu links
 const NavMenuLinks = styled(Link)`
 ${NavLink}
 `
 
+// ! styling for nav btn
+const NavBtn = styled.div`
+display: flex;
+align-items: center;
+margin-right: 24px;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
+`
+
 const Navbar = () => {
     return (
         <Nav>
             {/* logo for the application */}
-            <Logo>
+            <Logo to="/">
                 Yoga Life
             </Logo>
             {/* menu bars for mobile screen */}
@@ -65,9 +99,12 @@ const Navbar = () => {
                     </NavMenuLinks>
                 ))}
             </NavMenu>
-            <h1>
-                Navbar
-            </h1>
+            {/* nav btn */}
+            <NavBtn>
+                <Button to="/contact" primary='true'>
+                    Contact Us
+                </Button>
+            </NavBtn>
         </Nav>
     )
 }
