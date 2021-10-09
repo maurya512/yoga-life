@@ -1,12 +1,13 @@
 // ! dependencies
 import React from 'react'
 import Navbar from './components/Navbar/Navbar';
+import GlobalStyle from './globalstyles';
 
 function App() {
   return (
     <>
+    <GlobalStyle />
       <Navbar />
-      <h1> Welcome to yoga life</h1>
     </>
   );
 }
