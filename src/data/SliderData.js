@@ -1,7 +1,7 @@
 // ! import and initialize images 
 import Image1 from '../images/yoga1.jpeg'
 import Image10 from '../images/yoga10.jpg'
-import Image3 from '../images/yoga3.jpeg'
+// import Image3 from '../images/yoga3.jpeg'
 import Image4 from '../images/yoga4.jpeg'
 import Image5 from '../images/yoga5.jpeg'
 import Image6 from '../images/yoga6.jpeg'
