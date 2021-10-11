@@ -9,7 +9,6 @@ import { AiOutlineBars } from 'react-icons/ai'
 // ! styled components
 const Nav = styled.nav`
 height: 60px;
-background: #000;
 display: flex;
 justify-content: space-between;
 padding: 1rem 2rem;
