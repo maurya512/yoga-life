@@ -14,7 +14,7 @@ export const SliderData = [
         title: 'Lorem Ipsum',
         description: 'Lorem Ipsum',
         price: '$ 499',
-        path: '/yoga',
+        path: '/sessions',
         label: 'Lorem Ipsum',
         image: Image1,
         alt: 'Lorem Ipsum'
@@ -23,7 +23,7 @@ export const SliderData = [
         title: 'Lorem Ipsum',
         description: 'Lorem Ipsum',
         price: '$ 299',
-        path: '/yoga',
+        path: '/sessions',
         label: 'Lorem Ipsum',
         image: Image10,
         alt: 'Lorem Ipsum'
@@ -32,7 +32,7 @@ export const SliderData = [
     //     title: 'Lorem Ipsum',
     //     description: 'Lorem Ipsum',
     //     price: '$ 299',
-    //     path: '/yoga',
+    //     path: '/sessions',
     //     label: 'Lorem Ipsum',
     //     image: Image3,
     //     alt: 'Lorem Ipsum'
@@ -41,7 +41,7 @@ export const SliderData = [
         title: 'Lorem Ipsum',
         description: 'Lorem Ipsum',
         price: '$ 299',
-        path: '/yoga',
+        path: '/sessions',
         label: 'Lorem Ipsum',
         image: Image4,
         alt: 'Lorem Ipsum'
@@ -50,7 +50,7 @@ export const SliderData = [
         title: 'Lorem Ipsum',
         description: 'Lorem Ipsum',
         price: '$ 299',
-        path: '/yoga',
+        path: '/sessions',
         label: 'Lorem Ipsum',
         image: Image5,
         alt: 'Lorem Ipsum'
@@ -59,7 +59,7 @@ export const SliderData = [
         title: 'Lorem Ipsum',
         description: 'Lorem Ipsum',
         price: '$ 299',
-        path: '/yoga',
+        path: '/sessions',
         label: 'Lorem Ipsum',
         image: Image6,
         alt: 'Lorem Ipsum'
@@ -68,7 +68,7 @@ export const SliderData = [
         title: 'Lorem Ipsum',
         description: 'Lorem Ipsum',
         price: '$ 299',
-        path: '/yoga',
+        path: '/sessions',
         label: 'Lorem Ipsum',
         image: Image7,
         alt: 'Lorem Ipsum'
