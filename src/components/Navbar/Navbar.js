@@ -81,7 +81,7 @@ margin-right: 24px;
 }
 `
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <Nav>
             {/* logo for the application */}
@@ -89,7 +89,7 @@ const Navbar = () => {
                 Yoga Life
             </Logo>
             {/* menu bars for mobile screen */}
-            <MenuBars />
+            <MenuBars onClick={toggle} />
             <NavMenu>
                 {/* ! mapping through the data from menuData file and displaying it on the screen  */}
                 {menuData.map((item, index) => (
