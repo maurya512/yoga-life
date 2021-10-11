@@ -69,7 +69,7 @@ z-index: 10;
 display: flex;
 flex-direction: column;
 max-width: 1600px;
-width: calc(100% - 100px)
+width: calc(100% - 100px);
 color: #fff;
 
 h1 {
@@ -154,6 +154,7 @@ const Hero = ({ slides }) => {
             clearTimeout(timeout.current);
         }
 
+        <HeroContent css={`color: #000`} />
         setCurrent(current === length - 1 ? 0 : current + 1)
         console.log(current)
 
