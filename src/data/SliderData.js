@@ -14,18 +14,18 @@ export const SliderData = [
         price: '$499',
         path: '/yoga',
         label: 'Lorem Ipsum',
-        image: Image1,
+        image: Image4,
         alt: 'Lorem Ipsum'
     },
-    // {
-    //     title: '',
-    //     description: '',
-    //     price: '',
-    //     path: '',
-    //     label: '',
-    //     image: '',
-    //     alt: ''
-    // },
+    {
+        title: 'Lorem Ipsum',
+        description: 'Lorem Ipsum',
+        price: '$ 299',
+        path: '/yoga',
+        label: 'Lorem Ipsum',
+        image: Image3,
+        alt: 'Lorem Ipsum'
+    },
     // {
     //     title: '',
     //     description: '',
