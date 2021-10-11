@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components/macro'
 import { Button } from '../Button/Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
-import { SliderData } from '../../data/SliderData'
+// import { SliderData } from '../../data/SliderData'
 
 // ! styled components
 const HeroSection = styled.section`
@@ -125,8 +125,10 @@ ${arrowButtons}
 `
 
 const Hero = ({ slides }) => {
+    // ! useState to alter the current of slides
     const [current, setCurrent] = useState(0)
 
+    // ! assign the length of 
     const length = slides.length
 
     const timeout = useRef(null)
