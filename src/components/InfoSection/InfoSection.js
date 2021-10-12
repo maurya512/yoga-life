@@ -12,7 +12,7 @@ const Container = styled.div`
 padding: 3rem calc((100vw - 1300px) / 2);
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 100px;
+grid-template-rows: 800px;
 
 @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -62,7 +62,7 @@ img {
 `
 
 
-const InfoSection = ({ heading, paragraphOne, paragraphTwo, buttonLabel, image }) => {
+const InfoSection = ({ heading, paragraphOne, paragraphTwo, buttonLabel, image, reverse }) => {
     return (
         <Section>
             <Container>
@@ -72,8 +72,8 @@ const InfoSection = ({ heading, paragraphOne, paragraphTwo, buttonLabel, image }
                     <p>{paragraphTwo}</p>
                     <Button to='/sessions' primary="true">{buttonLabel}</Button>
                 </ColumnLeft>
-                <ColumnRight>
-                <img src={image} alt="yoga classes" />
+                <ColumnRight reverse={reverse}>
+                    <img src={image} alt="yoga classes" />
                 </ColumnRight>
             </Container>
         </Section>
