@@ -1,5 +1,6 @@
 // ! dependencies
 import React, { useState } from 'react'
+import Display from './components/Display/Display';
 import Dropdow from './components/Dropdown/Dropdow';
 import Hero from './components/Hero/Hero';
 import InfoSection from './components/InfoSection/InfoSection';
@@ -23,6 +24,7 @@ function App() {
       {/* pass in props that takes in the data from SliderData */}
       <Hero slides={SliderData} />
       <InfoSection {...InfoData} />
+      <Display />
     </>
   );
 }
