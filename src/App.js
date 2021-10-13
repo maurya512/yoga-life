@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Display from './components/Display/Display';
 import Dropdow from './components/Dropdown/Dropdow';
+import Features from './components/Features/Features';
 import Hero from './components/Hero/Hero';
 import InfoSection from './components/InfoSection/InfoSection';
 import Navbar from './components/Navbar/Navbar';
@@ -25,6 +26,7 @@ function App() {
       <Hero slides={SliderData} />
       <InfoSection {...InfoData} />
       <Display />
+      <Features />
     </>
   );
 }
