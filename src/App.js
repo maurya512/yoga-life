@@ -6,6 +6,7 @@ import Features from './components/Features/Features';
 import Hero from './components/Hero/Hero';
 import InfoSection from './components/InfoSection/InfoSection';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import { InfoData } from './data/InfoData';
 // ! imports the slider data from data folder
 import { SliderData } from './data/SliderData';
@@ -27,6 +28,7 @@ function App() {
       <InfoSection {...InfoData} />
       <Display />
       <Features />
+      <Footer />
     </>
   );
 }
