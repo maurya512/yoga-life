@@ -1,16 +1,15 @@
 // ! dependencies
 import React, { useState } from 'react'
-import Display from './components/Display/Display';
+import { Switch, Route } from 'react-router-dom'
+
 import Dropdow from './components/Dropdown/Dropdow';
-import Features from './components/Features/Features';
-import Hero from './components/Hero/Hero';
-import InfoSection from './components/InfoSection/InfoSection';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import { InfoData } from './data/InfoData';
-// ! imports the slider data from data folder
-import { SliderData } from './data/SliderData';
 import GlobalStyle from './globalstyles';
+import Home from './pages';
+import About from './pages/About';
+import Sessions from './pages/Sessions';
+import Results from './pages/Results';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,11 +22,13 @@ function App() {
       <GlobalStyle />
       <Navbar toggle={toggle} />
       <Dropdow isOpen={isOpen} toggle={toggle} />
-      {/* pass in props that takes in the data from SliderData */}
-      <Hero slides={SliderData} />
-      <InfoSection {...InfoData} />
-      <Display />
-      <Features />
+      <Switch >
+        {/* define the routes for each component */}
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/sessions" exact component={Sessions} />
+        <Route path="/results" exact component={Results} />
+      </Switch>
       <Footer />
     </>
   );
